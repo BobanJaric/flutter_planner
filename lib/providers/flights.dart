@@ -87,7 +87,6 @@ class Flights with ChangeNotifier {
 
   Future<void> fetchAndSetFlights() async {
     final url = Uri.parse('http://10.0.2.2:5000/api/flights/user/1');
-    /* final url = Uri.parse('http://192.168.0.16:5000/api/places/user/1'); */
 
     try {
       final response = await http.get(
